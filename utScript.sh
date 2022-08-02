@@ -5,6 +5,10 @@ set CHROME_BIN="/bin/google-chrome"
 echo "starting pytest"
 
 
-python -m pytest
+coverage run -m pytest
+
+coverage report -m
+
+coverage xml
 
 echo "Testing ends!!!"
